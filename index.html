@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crack it!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./quiz-icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Crack it!</h1>
+                <p>Quiz with fun ^ Vadivelu ^ &#128540; </p>
+            </div>
+            <div class="content">
+                <div class="gif-container">
+                    <img id="continue-gif" src="./gif/continue.gif" alt="continue-gif"/> <!-- attend quiz -->
+                    <img id="vadivelu-dance" src="./gif/dance-vadivelu.gif" alt="vadivelu-dance"/> <!-- score = 5 -->
+                    <img id="vadivelu-laughing" src="./gif/laughing.gif" alt="vadivelu-laughing"/> <!-- score = 4 -->
+                    <img id="vadivelu-smirk" src="./gif/smirk-vadivelu.gif" alt="vadivelu-smirk"/> <!-- score = 3 -->
+                    <img id="ena-idhu" src="./gif/ena-idhu.gif" alt="vadivelu-ena-idhu"/> <!-- score = 2 -->
+                    <img id="vadivelu-doubt" src="./gif/vadivel-doubt.gif" alt="vadivelu-doubt"/> <!-- score = 1 -->
+                    <img id="vadivelu-shocked" src="./gif/vadivelu-shocked.gif" alt="vadivelu-shocked"/> <!-- score = 0 -->         
+                </div>
+                <div class="quiz-container">
+                    <button class="button-class" onclick="loadQuestion()" id="start-button">Start Quiz!</button>
+                    <div class="question-class" id="question"></div>
+                    <div class="choices-class" id="choice"></div>
+                    <button onclick="checkAnswer()" id="done-button" class="button-class">Done!</button>
+                    <div id="score"></div>
+                    <div id="comment"></div>
+                    <button class="button-class" id="play-again-button" onclick="window.location.reload()">Play again!</button>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

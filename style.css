@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    background-color: black;
+    font-family: 'Gotham';
+}
+
+.header{
+    padding: 12px 30px;
+    background-color:dodgerblue;
+    color: white;
+}
+
+.header > h1{
+    margin-bottom: 0px;
+}
+
+.header > p{
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.content{
+    margin: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content > .gif-container > img{
+    display: none;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    flex: 0.1;
+    padding: 10px;
+}
+
+.content > .quiz-container{
+    flex: 0.9;
+    margin: 10px 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.quiz-container > .question-class{
+    padding: 20px;
+    color: beige;
+    font-size: large; 
+    width: 400px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+}
+
+.quiz-container > .choices-class{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.quiz-container > .choices-class > .all-choices > input{
+    visibility: hidden;  /* to hid radio buttons */
+}
+
+.quiz-container > .choices-class > .all-choices > label{
+    display: grid;
+    grid-template-columns: repeat(2);
+    cursor: pointer;
+    background-color: dodgerblue;
+    padding: 12px 10px;
+    color: white;
+    border-radius: 7px;
+    min-width: 400px;
+    align-items: center;
+}
+
+.quiz-container > .choices-class > .all-choices > label:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1) !important;
+}
+
+.quiz-container > .choices-class > .all-choices > input:checked + label{
+    background-color: white;
+    color: dodgerblue;
+}
+
+#start-button{
+    position: absolute;
+    margin-top: 30%;
+}
+
+#done-button{
+    display: none;
+}
+
+.button-class{
+    color: white;
+    background-color: gray;
+    padding: 12px 60px;
+    cursor: pointer;
+    font-family: 'Gotham';
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    font-size: 17px;
+}
+
+#score{
+    font-size: 30px;
+}
+
+#comment{
+    font-size: 35px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+}
+
+#play-again-button{
+    display: none;
+}
